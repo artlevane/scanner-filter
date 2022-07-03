@@ -322,7 +322,6 @@ html, body {
 .form-content {
     position: relative;
     background-color: #5cbaff !important;
-    margin-top: 50%;
 }
 
 .form-content .form-group {

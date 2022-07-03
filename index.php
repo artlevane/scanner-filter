@@ -17,6 +17,20 @@
                 <div class="bg"></div>
                 <div class="form-content">
                     <div class="form-items">
+                        <div>
+                            <h6>Quick Links</h6>
+                                    <a target="_blank" href="https://paisvcprod.service-now.com/$knowledge.do" class="link-light" style=
+                                    "color: white;">KB Base</a><br>
+                                    <a target="_blank" href="https://paisvcprod.service-now.com/$knowledge.do" class="link-light" style=
+                                    "color: white;">Snow Cases</a><br>
+                                    <a target="_blank" href="https://fujitsuscannerstore.com/service_programs/" class="link-light" style="color: white;">Service Contracts</a><br>
+                                    <a target="_blank" href="https://imagescanner.fujitsu.com/global/dl/" class="link-light" style="color:white;">fi Downloads</a><br>
+                                    <a target="_blank" href="https://scansnap.fujitsu.com/global/dl/" class="link-light" style="color:white;">ScanSnap Downloads</a><br>
+                                    <a target="_blank" href="http://fujitsuscannerstore.com" class="link-light" style="color:white;">Fujitsu Scanner Store</a><br>
+                                    <a target="_blank" href="https://imagescanner.fujitsu.com/global/dl/index-sps.html" class="link-light" style="color:white;">SP Downloads</a><br>
+                            <br><br>
+                        </div>
+
                         <h3>Select your scanner</h3>
                         <form>
                             <button type="button" class="btn btn-secondary" id="ss-btn">ScanSnap</button>
@@ -66,6 +80,7 @@
                                 <button type="button" class="btn btn-secondary series-btn" id="fi-6000-series-btn">fi-6000 Series</button>
                                 <button type="button" class="btn btn-secondary series-btn" id="fi-5000-series-btn">fi-5000 Series</button>
                                 <button type="button" class="btn btn-secondary series-btn" id="network-series-btn">Network Series</button>
+                                <button type="button" class="btn btn-secondary series-btn" id="sp-series-btn">SP Series</button>
 
                                 <!-- fi-8000 Series Dropdown -->
                                 <div class="dropdown inline">
@@ -143,6 +158,30 @@
                                         <li><a id="n1800" class="dropdown-item" href="#">N1800</a></li>
                                     </ul>
                                 </div>
+
+                                <!-- SP Series Dropdown -->
+                                <div class="dropdown inline">
+                                    <button class="btn btn-secondary dropdown-toggle sp-series-dropdown collapse" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        SP Series
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a id="sp1130ne" class="dropdown-item" href="#">SP-1130Ne</a></li>
+                                        <li><a id="sp1120n" class="dropdown-item" href="#">SP-1120N / SP-1125N / SP-1130N</a></li>
+                                        <li><a id="sp1425" class="dropdown-item" href="#">SP-1425</a></li>
+                                        <li><a id="sp1120" class="dropdown-item" href="#">SP-1120 / SP-1125 / SP-1130</a></li>
+                                    </ul>
+                                </div>
+                                <br><br>
+                                <div class="fi-links collapse">
+                                    <h6>Drivers / Software</h6>
+                                            <a target="_blank" href="http://imagescanner.fujitsu.com/global/dl/setup/psip-twain32-3100.html?MODEL=5141" class="link-light" style=
+                                            "color: white;">TWAIN Driver</a><br>
+                                            <a target="_blank" href="http://imagescanner.fujitsu.com/global/dl/setup/psip-isis-302.html?MODEL=5141" class="link-light" style="color: white;">ISIS Driver</a><br>
+                                            <a target="_blank" href="http://imagescanner.fujitsu.com/global/dl/setup/psss-105.html?MODEL=5141" class="link-light" style="color:white;">PaperStream ClickScan</a><br>
+                                            <a target="_blank" href="https://imagescanner.fujitsu.com/global/dl/" class="link-light" style="color:white;">fi Downloads</a><br>
+                                            <a target="_blank" href="https://imagescanner.fujitsu.com/global/dl/index-sps.html" class="link-light" style="color:white;">SP Downloads</a><br>
+                                    <br><br>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -165,18 +204,18 @@
         $( "#ss-btn" ).click(function() {
             $( "#ss-btn" ).removeClass("btn-secondary").addClass("btn-primary");
             $("#fi-btn").removeClass("btn-primary").addClass("btn-secondary");
-            $("#fi-series").addClass("collapse");
+            $("#fi-series, .fi-links").addClass("collapse");
             $("#scansnap").removeClass("collapse");
         });
 
         // WHEN I CLICK ON THE FI-SERIES BUTTON
 
         $( "#fi-btn" ).click(function() {
-            $("#fi-8000-series-btn, #fi-7000-series-btn, #fi-6000-series-btn, #fi-5000-series-btn, #network-series-btn").removeClass("collapse btn-primary").addClass("btn-secondary");
+            $("#sp-series-btn, #fi-8000-series-btn, #fi-7000-series-btn, #fi-6000-series-btn, #fi-5000-series-btn, #network-series-btn").removeClass("collapse btn-primary").addClass("btn-secondary");
             $( "#fi-btn" ).removeClass("btn-secondary").addClass("btn-primary");
             $("#ss-btn").removeClass("btn-primary").addClass("btn-secondary");
-            $("#scansnap, .fi-8000-series-dropdown, .fi-7000-series-dropdown, .fi-6000-series-dropdown, .fi-5000-series-dropdown, .network-series-dropdown").addClass("collapse");
-            $("#fi-series").removeClass("collapse");
+            $("#scansnap, .fi-8000-series-dropdown, .fi-7000-series-dropdown, .fi-6000-series-dropdown, .fi-5000-series-dropdown, .network-series-dropdown, .sp-series-dropdown").addClass("collapse");
+            $("#fi-series, .fi-links").removeClass("collapse");
         });
 
         // WHEN I CLICK ON THE FI-8000 SERIES BUTTON
@@ -184,7 +223,7 @@
         $( "#fi-8000-series-btn" ).click(function() {
             $("#fi-8000-series-btn, #fi-7000-series-btn, #fi-6000-series-btn, #fi-5000-series-btn, #network-series-btn").removeClass("btn-primary").addClass("btn-secondary collapse");
             $("#fi-8000-series-btn").addClass("btn-primary").removeClass("btn-secondary");
-            $(".fi-7000-series-dropdown, .fi-6000-series-dropdown, .fi-5000-series-dropdown, .network-series-dropdown").addClass("collapse");
+            $(".fi-7000-series-dropdown, .fi-6000-series-dropdown, .fi-5000-series-dropdown, .network-series-dropdown, #sp-series-btn").addClass("collapse");
             $(".fi-8000-series-dropdown").removeClass("collapse");
             $("#fi-btn").removeClass("btn-primary").addClass("btn-secondary");
         });
@@ -194,7 +233,7 @@
         $( "#fi-7000-series-btn" ).click(function() {
             $("#fi-7000-series-btn, #fi-8000-series-btn, #fi-6000-series-btn, #fi-5000-series-btn, #network-series-btn").removeClass("btn-primary").addClass("btn-secondary collapse");
             $("#fi-7000-series-btn").addClass("btn-primary").removeClass("btn-secondary");
-            $(".fi-8000-series-dropdown, .fi-6000-series-dropdown, .fi-5000-series-dropdown, .network-series-dropdown").addClass("collapse");
+            $(".fi-8000-series-dropdown, .fi-6000-series-dropdown, .fi-5000-series-dropdown, .network-series-dropdown, #sp-series-btn").addClass("collapse");
             $(".fi-7000-series-dropdown").removeClass("collapse");
             $("#fi-btn").removeClass("btn-primary").addClass("btn-secondary");
         });
@@ -204,7 +243,7 @@
         $( "#fi-6000-series-btn" ).click(function() {
             $("#fi-6000-series-btn, #fi-7000-series-btn, #fi-8000-series-btn, #fi-5000-series-btn, #network-series-btn").removeClass("btn-primary").addClass("btn-secondary collapse");
             $("#fi-6000-series-btn").addClass("btn-primary").removeClass("btn-secondary");
-            $(".fi-7000-series-dropdown, .fi-8000-series-dropdown, .fi-5000-series-dropdown, .network-series-dropdown").addClass("collapse");
+            $(".fi-7000-series-dropdown, .fi-8000-series-dropdown, .fi-5000-series-dropdown, .network-series-dropdown, #sp-series-btn").addClass("collapse");
             $(".fi-6000-series-dropdown").removeClass("collapse");
             $("#fi-btn").removeClass("btn-primary").addClass("btn-secondary");
         });
@@ -214,7 +253,7 @@
         $( "#fi-5000-series-btn" ).click(function() {
             $("#fi-5000-series-btn, #fi-7000-series-btn, #fi-6000-series-btn, #fi-8000-series-btn, #network-series-btn").removeClass("btn-primary").addClass("btn-secondary collapse");
             $("#fi-5000-series-btn").addClass("btn-primary").removeClass("btn-secondary");
-            $(".fi-7000-series-dropdown, .fi-6000-series-dropdown, .fi-8000-series-dropdown, .network-series-dropdown").addClass("collapse");
+            $(".fi-7000-series-dropdown, .fi-6000-series-dropdown, .fi-8000-series-dropdown, .network-series-dropdown, #sp-series-btn").addClass("collapse");
             $(".fi-5000-series-dropdown").removeClass("collapse");
             $("#fi-btn").removeClass("btn-primary").addClass("btn-secondary");
         });
@@ -224,8 +263,17 @@
         $( "#network-series-btn" ).click(function() {
             $("#network-series-btn, #fi-7000-series-btn, #fi-6000-series-btn, #fi-5000-series-btn, #fi-8000-series-btn").removeClass("btn-primary").addClass("btn-secondary collapse");
             $("#network-series-btn").addClass("btn-primary").removeClass("btn-secondary");
-            $(".fi-7000-series-dropdown, .fi-6000-series-dropdown, .fi-5000-series-dropdown, .fi-8000-series-dropdown").addClass("collapse");
+            $(".fi-7000-series-dropdown, .fi-6000-series-dropdown, .fi-5000-series-dropdown, .fi-8000-series-dropdown, #sp-series-btn").addClass("collapse");
             $(".network-series-dropdown").removeClass("collapse");
+            $("#fi-btn").removeClass("btn-primary").addClass("btn-secondary");
+        });
+
+        // WHEN I CLICK ON THE SP SERIES BUTTON
+
+        $( "#sp-series-btn" ).click(function() {
+            $("#network-series-btn, #sp-series-btn, #fi-7000-series-btn, #fi-6000-series-btn, #fi-5000-series-btn, #fi-8000-series-btn").removeClass("btn-primary").addClass("btn-secondary collapse");
+            $(".network-series-dropdown, .fi-7000-series-dropdown, .fi-6000-series-dropdown, .fi-5000-series-dropdown, .fi-8000-series-dropdown").addClass("collapse");
+            $(".sp-series-dropdown").removeClass("collapse");
             $("#fi-btn").removeClass("btn-primary").addClass("btn-secondary");
         });
 
@@ -395,6 +443,28 @@
         // n7100e
         $( "#n7100e" ).click(function() {
             $(".form-holder").load("scanners/network/n7100e.php");
+        });
+
+        // sp-series
+
+        // sp-1130ne
+        $( "#sp1130ne" ).click(function() {
+            $(".form-holder").load("scanners/sp/sp-1130ne.php");
+        });
+
+        // sp-1120N / sp-1125n / sp-1130n
+        $( "#sp1120n" ).click(function() {
+            $(".form-holder").load("scanners/sp/sp-1120n-1125n-1130n.php");
+        });
+
+        // sp-1120 / sp-1125 / sp-1130
+        $( "#sp1120" ).click(function() {
+            $(".form-holder").load("scanners/sp/sp-1120-1125-1130.php");
+        });
+
+        // sp-1425
+        $( "#sp1425" ).click(function() {
+            $(".form-holder").load("scanners/sp/sp-1425.php");
         });
 
     });

@@ -33,5 +33,10 @@
 }
 
 .blank-top {
-    height: 30% !important;
+    height: 15% !important;
+}
+
+.os-card {
+    margin-top: 10%;
+    margin-bottom: -35%;
 }

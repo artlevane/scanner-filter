@@ -1,14 +1,15 @@
 
-    <h1 class="h1 collapse">fi-7300</h1>
+
     <div class="row">
         <div class="col-md-6">
             <div class="card">
                 <div class="blank-top"></div>
                 <div class="card-body">
                     <h5 class="card-title">Manuals & Guides</h5>
-                    <a href="#" class="link-primary">Illustrator's Guide</a><br>
-                    <a href="#" class="link-primary">Operator's Guide</a><br>
-                    <a href="#" class="link-primary">Maintenance Manual</a><br>
+                    <p>fi-7300NX</p><br>
+                    <a href="https://paisvcprod.service-now.com/sys_attachment.do?sys_id=fb4885fd1bb7b300fd7abbfccd4bcbbc" class="link-primary">Operator's Guide</a><br>
+                    <a href="https://paisvcprod.service-now.com/sys_attachment.do?sys_id=5b4885fd1bb7b300fd7abbfccd4bcb60" class="link-primary">Illustrator's Guide</a><br>
+                    <a href="https://paisvcprod.service-now.com/sys_attachment.do?sys_id=134885fd1bb7b300fd7abbfccd4bcb62" class="link-primary">Maintenance Manual</a><br>
                 </div>
                 </div>
         </div>
@@ -16,9 +17,13 @@
             <div class="card">
                 <div class="blank-top"></div>
                 <div class="card-body">
-                    <h5 class="card-title">Cleaning & Consumables</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">fi-7300NX</h5><br>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=Da40rGW2Dbw" class="btn-sm btn-primary">Fujitsu Intro Video</a><br><br>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=ZSjQHKgoCh0" class="btn-sm btn-primary">Fujitsu Intro Video 2</a><br><br>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=UNS_iu1qeJs" class="btn-sm btn-primary">Fujitsu Scanner Benefits Video</a><br><br>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=UNS_iu1qeJs" class="btn-sm btn-primary">User Intro Video</a><br><br>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=UNS_iu1qeJs" class="btn-sm btn-primary">Fujitsu Firmware Update Instruction Video</a><br><br>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=0gmTVJwn-_g" class="btn-sm btn-primary">User - How to Install and Configure PaperStream NXManager</a><br>
                 </div>
                 </div>
         </div>
@@ -28,42 +33,36 @@
             <div class="card">
                 <div class="blank-top"></div>
                 <div class="card-body">
-                    <h5 class="card-title">Common Resolves</h5>
-                    <a href="#" class="link-primary">KB10000</a><br>
-                    <a href="#" class="link-primary">KB20000</a><br>
-                    <a href="#" class="link-primary">KB30000</a><br>
+                    <br><br>
+                    <a href="https://paisvcprod.service-now.com/kb_view.do?sys_kb_id=535d5df81b9b7300fd7abbfccd4bcb8a&sysparm_rank=2&sysparm_tsqueryId=349d38271bd899102fb920a5604bcb4e" class="btn btn-primary">fi-7300NX Private Reference Library</a>
                 </div>
                 </div>
         </div>
         <div class="col-md-6">
             <div class="card">
-                <div class="blank-top" style="margin-top: -13%;"></div>
+                <div class="blank-top"></div>
                 <div class="card-body">
                     <h5 class="card-title">OS / Software</h5>
-                    <a href="#" class="link-primary">Windows 11</a><br>
-                    <a href="#" class="link-primary">Windows 10</a><br>
-                    <a href="#" class="link-primary">Windows 8.1</a><br>
-                    <a href="#" class="link-primary">Windows 7</a><br>
-                    <a href="#" class="link-primary">Windows Server 2022</a><br>
-                    <a href="#" class="link-primary">Windows Server 2019</a><br>
-                    <a href="#" class="link-primary">Windows Server 2016</a><br>
-                    <a href="#" class="link-primary">Windows Server 2012R2</a><br>
-                    <a href="#" class="link-primary">Windows Server 2012</a><br>
-                    <a href="#" class="link-primary">Windows Server 2008R2</a><br>
-                    <a href="#" class="link-primary">Windows Server 2008</a><br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                            Windows 11<br>
+                            Windows 10<br>
+                            Windows 8.1<br>
+                            Windows 7<br>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            Windows Server 2022<br>
+                            Windows Server 2019<br>
+                            Windows Server 2016<br>
+                            Windows Server 2012R2<br>
+                            Windows Server 2012<br>
+                            Windows Server 2008R2<br>
+                            Windows Server 2008<br>
+                        </div>
+                    </div>
                 </div>
-                </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card">
-                <img src="https://scanners.us.fujitsu.com/-/media/project/scanners/products/fi-7180/fi-7180_featured_right.jpg?mw=1200&hash=B27BFE573873BB9E48414AE02BEE47C9" class="card-img-top">
-                </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card">
-                <img src="https://scanners.us.fujitsu.com/-/media/project/scanners/products/fi-7180/fi-7180_featured_right.jpg?mw=1200&hash=B27BFE573873BB9E48414AE02BEE47C9" class="card-img-top">
                 </div>
         </div>
     </div>

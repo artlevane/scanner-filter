@@ -1,14 +1,14 @@
 
-    <h1 class="h1 collapse">fi-7300</h1>
+
     <div class="row">
         <div class="col-md-6">
             <div class="card">
                 <div class="blank-top"></div>
                 <div class="card-body">
                     <h5 class="card-title">Manuals & Guides</h5>
-                    <a href="#" class="link-primary">Illustrator's Guide</a><br>
-                    <a href="#" class="link-primary">Operator's Guide</a><br>
-                    <a href="#" class="link-primary">Maintenance Manual</a><br>
+                    <a href="https://paisvcprod.service-now.com/sys_attachment.do?sys_id=e9c801311bf7b300fd7abbfccd4bcb77" class="link-primary">Illustrator's Guide</a><br>
+                    <a href="https://paisvcprod.service-now.com/sys_attachment.do?sys_id=b5c801311bf7b300fd7abbfccd4bcb79" class="link-primary">Operator's Guide</a><br>
+                    <a href="https://paisvcprod.service-now.com/sys_attachment.do?sys_id=81c801311bf7b300fd7abbfccd4bcb74" class="link-primary">Maintenance Manual</a><br>
                 </div>
                 </div>
         </div>
@@ -16,9 +16,9 @@
             <div class="card">
                 <div class="blank-top"></div>
                 <div class="card-body">
-                    <h5 class="card-title">Cleaning & Consumables</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">fi-6010N</h5><br>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=2GWHUlg70Oo" class="btn btn-primary">User Demo Video</a>
+                    <a target="_blank" href="https://www.youtube.com/watch?v=ssTzIFWOXW0" class="btn btn-primary">Fujitsu Basic Setup Video</a>
                 </div>
                 </div>
         </div>
@@ -28,10 +28,8 @@
             <div class="card">
                 <div class="blank-top"></div>
                 <div class="card-body">
-                    <h5 class="card-title">Common Resolves</h5>
-                    <a href="https://paisvcprod.service-now.com/kb_view.do?sys_kb_id=0834fae21b7798d008f3da83cd4bcbce&sysparm_rank=1&sysparm_tsqueryId=3749e3621b1055102fb920a5604bcbe5" class="link-primary">KB0010300 Troubleshooting Checklist: Network Scanner Software Issues</a><br>
-                    <a href="#" class="link-primary">KB20000</a><br>
-                    <a href="#" class="link-primary">KB30000</a><br>
+                    <br><br>
+                    <a href="https://paisvcprod.service-now.com/kb_view.do?sys_kb_id=d02d9d781b9b7300fd7abbfccd4bcb5b&sysparm_rank=1&sysparm_tsqueryId=9ea56c2b1b1899102fb920a5604bcb72" class="btn btn-primary">Private Reference Library</a>
                 </div>
                 </div>
         </div>
@@ -40,21 +38,28 @@
                 <div class="blank-top"></div>
                 <div class="card-body">
                     <h5 class="card-title">OS / Software</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                            Windows 10<br>
+                            Windows 8.1<br>
+                            Windows 8<br>
+                            Windows 7<br>
+                            Windows Vista<br>
+                            Windows XP<br>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            Windows Server 2019<br>
+                            Windows Server 2016<br>
+                            Windows Server 2012R2<br>
+                            Windows Server 2012<br>
+                            Windows Server 2008R2<br>
+                            Windows Server 2008<br>
+                            Windows Server 2003<br>
+                        </div>
+                    </div>
                 </div>
-                </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card">
-                <img src="https://scanners.us.fujitsu.com/-/media/project/scanners/products/fi-7180/fi-7180_featured_right.jpg?mw=1200&hash=B27BFE573873BB9E48414AE02BEE47C9" class="card-img-top">
-                </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card">
-                <img src="https://scanners.us.fujitsu.com/-/media/project/scanners/products/fi-7180/fi-7180_featured_right.jpg?mw=1200&hash=B27BFE573873BB9E48414AE02BEE47C9" class="card-img-top">
                 </div>
         </div>
     </div>
